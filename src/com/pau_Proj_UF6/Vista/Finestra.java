@@ -109,7 +109,7 @@ public class Finestra extends JFrame implements ActionListener {
             preparedStatement = cx.prepareStatement(sql);
             preparedStatement.setInt(1, idProducto);
             preparedStatement.executeUpdate();
-            System.out.println("Producto eliminado con éxito.");
+            System.out.println("Producte eliminat correctament.");
         } catch (SQLException excepcion) {
             throw new SQLException(excepcion);
         } finally {
@@ -218,7 +218,7 @@ public class Finestra extends JFrame implements ActionListener {
 class Finestra2 extends JFrame {
     public Finestra2() {
         this.setSize(500, 500);
-        setTitle("Finestra2");
+        setTitle("Factura");
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
         this.getContentPane().setBackground(Color.WHITE);
